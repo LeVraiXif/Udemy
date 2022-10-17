@@ -20,8 +20,6 @@ while try_to_find > 0:
             print("Le nombre mystère est plus grand")
         elif int(reply) == number:
             if try_to_find > 1:
-                print(f"Bravo ! Tu as gagné il te reste encore {try_to_find} essais")
-            else:
-                print(f"Bravo ! Tu as gagné il te reste encore {try_to_find} essai")
+                print(f"Bravo ! Tu as gagné il te reste encore {try_to_find} essai{'s' if try_to_find > 1 else ''}")
             break
 
